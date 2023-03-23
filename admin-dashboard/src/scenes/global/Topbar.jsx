@@ -12,6 +12,12 @@ import SearchIcon from "@mui/icons-material/Search";
 const Topbar = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
+  // console.log('theme.palette:', theme.palette)
+  // console.log('colors:', colors)
+  /** They both give same color */
+  console.log("colors:", colors.primary[500]);
+  console.log("theme.palette.primary.main:", theme.palette.primary.main);
+
   const colorMode = useContext(ColorModeContext);
 
   return (
