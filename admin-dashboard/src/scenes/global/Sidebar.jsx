@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import {
   Box,
   IconButton,
@@ -53,27 +54,7 @@ const SidebarComp = () => {
   const { broken, collapseSidebar, collapsed, toggleSidebar, toggled } =
     useProSidebar();
   return (
-    <Box
-      // sx={{
-      //   "& .pro-sidebar-inner": {
-      //     background: `${colors.primary[400]} !important`,
-      //   },
-      //   "& .pro-icon-wrapper": {
-      //     backgroundColor: "transparent !important",
-      //   },
-      //   "& .pro-inner-item": {
-      //     padding: "5px 35px 5px 20px !important",
-      //   },
-      //   "& .pro-inner-item:hover": {
-      //     color: "red !important",
-      //   },
-      //   "& .pro-menu-item.active": {
-      //     color: "#6870fa !important",
-      //   },
-      // }}
-      display="flex"
-      height="100%"
-    >
+    <Box display="flex" height="100%">
       <Sidebar
         rootStyles={{
           [`& .${sidebarClasses.container}`]: {
